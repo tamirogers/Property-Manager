@@ -1,0 +1,77 @@
+
+
+<div class="container1">
+
+    <h2> Property Manager </h2>
+   
+    <div class="inputMe" align=center>
+     <h4> Property Manager Search for Your Properties</h4>
+        <input class="inputMe" ng-model='vm.findPlace' />
+        <!-- fires function From the search.controller.  vm.findPlace is in controller with empty string to clear. -->
+        <button class="buttonOne" ng-click="vm.UserNameHere(vm.findPlace)"> Log in With User Name </button>
+         <div><button class="sunLight" ui-sref="propertygrid">Click to Add a New Property</button></div>
+         <div><button class="sunLight" ui-sref="register">New Users Click to Register</button></div>
+    </div>
+
+    
+    <div><h4>Search for a Property</h4><button class="sunLight" ui-sref="searchgrid">Click to Search for a Property</button></div>
+
+
+    <!-- // Registered properties from UserName. came from the GET SearchController, GET from UserFactory -->
+    <div ng-repeat='data in vm.UserNameReturned'>
+        <div class="container2">
+
+          <body class="searchBody">
+                <table class="table table-bordered table-hover">
+
+                   <button href="" ng-click="vm.deleteTask(list.toDoEntryId)">Delete Item</button>
+
+                  <td><button ng-click="editing=!editing"> Edit </button> 
+
+                   <button ng-click="vm.UpdateData(list.toDoEntryId,list)"> Update </button>
+                    <thead>
+                        <tr>
+                            <th>Property Name: </th>
+                            <td> <span ng-click="editing=true" ng-hide="editing">  {{ data.propertyName }}  </span>
+                             <input class="topInput" id="mainInput" ng-show="editing" ng-model='data.propertyName' \>
+                             </td>
+
+                            <th>Square Footage </th>
+                            <td> <span ng-click="editing=true" ng-hide="editing"> {{ data.squareFootage }} </span>
+                            <input class="topInput" id="mainInput" ng-show="editing" ng-model='data.squareFootage' \>
+                            </td></tr>
+                            <tr>
+                            <th>Address: </th>
+                            <td> <span ng-click="editing=true" ng-hide="editing">{{ data.addressOne }} </span> 
+                            <input class="topInput" id="mainInput" ng-show="editing" ng-model='data.addressOne' \>
+                            </td>
+                             <td> <span ng-click="editing=true" ng-hide="editing"> {{ data.addressTwo }}</span> 
+                             <input class="topInput" id="mainInput" ng-show="editing" ng-model='data.addressTwo' \>
+                            </td>
+                            <th>City: </th>
+                            <td> <span ng-click="editing=true" ng-hide="editing"> {{ data.city }} </span>
+                            <input class="topInput" id="mainInput" ng-show="editing" ng-model='data.city' \>
+                            </td>
+                            <th>State: </th>
+                            <td> {{ data.state }} </td>
+                            <th>Zip: </th>
+                            <td> {{ data.zip }} </td>
+                        </tr><tr>
+                        <th>Number of Bedrooms: </th>
+                            <td> {{ data.bedrooms }} </td>
+                            <th>Number of Bathrooms: </th>
+                            <td> {{ data.baths }} </td>
+                            <th>Rent: </th>
+                            <td> {{ '$' + data.rent }} </td></tr>
+                           
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+
+
+        <div id="new" ui-view> </div>

@@ -1,0 +1,119 @@
+
+
+<div class="container1">
+<h4> Search for a Property </h4>
+
+<!-- Uses SearchController -->
+
+<div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">Already Registered</span>
+  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+</div>
+<br>
+<div class="input-group">
+  <input type="text" class="form-control" ng-model="vm.City" placeholder="City" aria-describedby="basic-addon2">
+  <span class="input-group-addon" id="basic-addon2">Search by City</span>
+</div>
+<br>
+<!-- <label for="basic-url">Your</label> -->
+<div class="input-group">
+  <input type="text" class="form-control" ng-model="vm.Zip" placeholder="Zip" aria-describedby="basic-addon2">
+  <span class="input-group-addon" id="basic-addon2">Search by Zip</span>
+</div>
+<br>
+<!-- <div class="input-group">
+  <span class="input-group-addon" ng-model="vm.MinRent" placeholder="rent" id="basic-addon3">Code</span>
+  <input type="Number" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+</div>
+<br> -->
+
+<div class="input-group">
+  <span class="input-group-addon">Minimum Rent</span>
+  <input type="Number" class="form-control" ng-model="vm.MinRent" aria-label="Amount (to the nearest dollar)">
+  <span class="input-group-addon">.00</span>
+</div>
+<br>
+
+<div class="input-group">
+  <span class="input-group-addon">Maximum Rent</span>
+  <input type="Number" class="form-control" ng-model="vm.MaxRent" aria-label="Amount (to the nearest dollar)">
+  <span class="input-group-addon">.00</span>
+</div>
+<br>
+
+
+
+<!-- <div class="input-group">
+  <span class="input-group-addon">Maximum Rent</span>
+  <input type="text" class="form-control" ng-model="vm.Rent" aria-label="Amount (to the nearest dollar)">
+  <span class="input-group-addon">.00</span>
+</div>
+<br> -->
+
+<!-- SearchController has the function, UserFactory -->
+<br>
+ <button class="buttonOne" ng-click="vm.goToDetailsState()"> Find Your Property </button>
+
+<!--  <button class="buttonOne" ng-click="vm.PropertiesHere(vm.City, vm.Zip, vm.Rent)"> Find Your Property </button> -->
+
+<!--  <div><a ui-sref="propertydetail ('{{data.propertyName}}')">details</a></div> -->
+
+
+
+
+
+<!--  <div ng-repeat='data in vm.PropertyNameReturned | limitTo:9'>
+        
+
+<div class="container2">
+
+          <body class="searchBody">
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Property Name: </th>
+                            <td> {{ data.propertyName }} </td>
+                             <th>Property Manager Contact Phone: </th>
+                            <td> {{ data.phone }} </td>
+                            <th>Square Footage </th>
+                            <td> {{ data.squareFootage }} </td>
+                            </tr><tr>
+                            <th>Address: </th>
+                            <td> {{ data.addressOne }} {{ data.addressTwo }}</td>
+                            <th>City: </th>
+                            <td> {{ data.city }} </td>
+                            <th>State: </th>
+                            <td> {{ data.state }} </td>
+                            <th>Zip: </th>
+                            <td> {{ data.zip }} </td>
+                        </tr><tr>
+                        <th>Number of Bedrooms: </th>
+                            <td> {{ data.bedrooms }} </td>
+                            <th>Number of Bathrooms: </th>
+                            <td> {{ data.baths }} </td>
+                            <th>Rent: </th>
+                            <td> {{ '$' + data.rent }} </td>
+                            </tr><tr>
+                             <th>Lease Term: </th>
+                            <td> {{ data.leaseTerm + ' months' }} </td>
+                            <th>Pet Friendly?: </th>
+                            <td> {{ data.pets }} </td></tr>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <body>
+                </body>
+        </div>
+        <div id="new" ui-view> </div>
+
+</div> -->
+     
+       
+
+

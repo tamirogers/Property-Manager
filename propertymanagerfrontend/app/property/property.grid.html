@@ -1,0 +1,45 @@
+<h3> Add Your New Property </h3>
+
+<!-- Prop managers enter new properties, POSTS to PropertyController and PropertyFactory -->
+<form class="newPropForm">
+
+<div class="form-group">
+    <input type="Number" name="first_name" id="first_name" ng-model="vm.UserId" class="form-control input-sm" placeholder="User ID">
+</div>
+<div class="form-group">
+    <input type="text" name="first_name" id="first_name" ng-model="vm.PropertyName" class="form-control input-sm" placeholder="Property Name">
+</div>
+<div class="form-group">
+    <input type="text" name="first_name" id="first_name" ng-model="vm.AddressOne" class="form-control input-sm" placeholder="Address">
+</div>
+<div class="form-group">
+    <input type="text" name="first_name" id="first_name" ng-model="vm.AddressTwo" class="form-control input-sm" placeholder="Address Additional">
+</div>
+
+<div class="form-group">
+    <input type="text" name="first_name" id="first_name" ng-model="vm.City" class="form-control input-sm" placeholder="City">
+</div>
+<div class="form-group">
+    <input type="text" name="first_name" id="first_name" ng-model="vm.State" class="form-control input-sm" placeholder="State">
+</div>
+<div class="form-group">
+    <input type="text" name="first_name" id="first_name" ng-model="vm.Phone" class="form-control input-sm" placeholder="Phone">
+</div>
+<div class="form-group">
+    <input type="Number" name="first_name" id="first_name" ng-model="vm.Rent" class="form-control input-sm" placeholder="Rent">
+</div>
+<div class="form-group">
+    <input type="Number" name="first_name" id="first_name" ng-model="vm.SquareFootage" class="form-control input-sm" placeholder="Square Footage">
+</div>
+<div class="form-group">
+    <input type="Number" name="first_name" id="first_name" ng-model="vm.Bedrooms" class="form-control input-sm" placeholder="Number of Bedrooms">
+</div>
+<div class="form-group">
+    <input type="Number" name="first_name" id="first_name" ng-model="vm.Baths" class="form-control input-sm" placeholder="Number of Bathrooms">
+</div>
+<div class="form-group">
+    <input type="text" name="first_name" id="first_name" ng-model="vm.LeaseTerm" class="form-control input-sm" placeholder="Lease">
+</div>
+
+  <input type="submit" value="Register" class="btn btn-info btn-block" ng-click='vm.NewPropertyToDatabase()'>
+  </form>

@@ -1,0 +1,40 @@
+.container1 {
+    width: 1366px;
+    height: 900px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 1px;
+    background-color: lightblue;
+}
+
+.container2 {
+    width: 965px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px padding-top: 30px;
+    background-color: white;
+}
+
+#regContainer {
+    width: 1366px;
+    height: 900px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 1px;
+    background-color: lightgreen;
+}
+
+.newPropForm {
+    width: 522px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 90px;
+    padding-right: 40px; 
+    padding-top: 30px;
+     margin-bottom: 40px;
+}
+
+.sunLight {
+    margin-top: 20px;
+}

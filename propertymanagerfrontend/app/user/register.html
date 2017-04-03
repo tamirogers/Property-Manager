@@ -1,0 +1,75 @@
+
+
+<!-- From UserController and UserFactory.  POST and registers new users to API -->
+<!-- <div class="container" id="regContainer"> -->
+<div class="container" id="regContainer">
+
+<!-- <ul class="nav nav-tabs" ng-controller="NavbarController as navbar"> -->
+<ul class="nav nav-tabs">
+<!-- <li role="presentation" ng-repeat="data in vm.links"> -->
+<li>
+ <a style="color:red;" class="backTo" ui-sref="search">Home</a></li>
+<!-- <a href="http://localhost:8080/#!/search"> {{ vm.linkHome }} </a> </li> -->
+<li>  <a style="color:red;" class="backTo" ui-sref="searchgrid">Search for a Property</a> </li>
+<li>  <a style="color:red;" class="backTo" ui-sref="propertygrid">Add a New Property</a> </li></ul> 
+
+    <div class="row centered-form">
+        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Please Register <small>It's free!</small></h3>
+                </div>
+                <div class="panel-body">
+                    <form role="form">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="first_name" id="first_name" ng-model="vm.FirstName" class="form-control input-sm" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="last_name" id="last_name" ng-model="vm.LastName" class="form-control input-sm" placeholder="Last Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" ng-model="vm.email" class="form-control input-sm" placeholder="Email Address">
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <div class="form-group">
+                                    <input type="text" ng-model="vm.UserName" class="form-control input-sm" placeholder="Create a User Name">
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                <!-- 	<div class="form-group">
+			    						<input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-sm" placeholder="Confirm Password">
+			    					</div> -->
+                                <label>
+                                    <input type="checkbox" id="cbox1" value="first_checkbox" ng-model="vm.TrueFalse"> Check if you a Property Manager</label>
+                            </div>
+                        </div>
+                  <!--       Function sends to UserController and UserFactory -->
+                        <input type="submit" value="Register" class="btn btn-info btn-block" ng-click='vm.itemsToDatabase()'>
+                    </form>
+                    <body>
+                 <!--    <script type="text/javascript" src="//api.filestackapi.com/filestack.js"></script>
+
+<input type="filepicker" data-fp-apikey="AWYsdi7fdToq5BXZqyGeOz"
+onchange="alert(event.fpfile.url)"> -->
+
+<!-- <input filepicker type="filepicker" data-fp-services="computer,facebook,webcam,box" on-success="pickResults=event.fpfile" /> -->
+
+</body>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+<!-- </div> -->

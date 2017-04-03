@@ -1,0 +1,102 @@
+
+<div class="container">
+
+    <table id="searchResults" class="table table-bordered ">
+
+        <tr>
+
+            <th>property title: </th>
+
+            <th>city:</th>
+
+            <th># of bedrooms:</th>
+
+            <th># of bathrooms:</th>
+
+            <th>pet friendly? </th>
+            <th> Photo</th>
+
+
+        </tr>
+
+        <!--  Here I access the response in the propertyController and do an ng-repeat to display all results that I got back -->
+
+        <tr ng-repeat="data in pc.propertyResponse">
+
+            <td>{{data.propertyName}}</td>
+
+            <td> {{data.city}}</td>
+
+            <td> {{data.bedrooms}}</td>
+
+            <td> {{data.baths}}</td>
+
+            <td>{{data.pets}}</td>
+            <td> <img ng-src="{{data.photo}}"></td>
+
+<!--             <td><img ng-src="{{Photo.url}}" </td> -->
+
+        </tr>
+
+    </table>
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- 
+<div class="container2">
+          
+     <table class="table table-bordered table-hover">
+        <div ng-repeat="data in pc.propertyResponse">
+            <thead>
+                <tr>
+                    <th>Property Name: </th>
+                    <td> {{ data.propertyName }} </td>
+                    <th>Property Manager Contact Phone: </th>
+                    <td> {{ data.phone }} </td>
+                    <th>Square Footage </th>
+                    <td> {{ data.squareFootage }} </td>
+                </tr>
+                <tr>
+                    <th>Address: </th>
+                    <td> {{ data.addressOne }} {{ data.addressTwo }}</td>
+                    <th>City: </th>
+                    <td> {{ data.city }} </td>
+                    <th>State: </th>
+                    <td> {{ data.state }} </td>
+                    <th>Zip: </th>
+                    <td> {{ data.zip }} </td>
+                </tr>
+                <tr>
+                    <th>Number of Bedrooms: </th>
+                    <td> {{ data.bedrooms }} </td>
+                    <th>Number of Bathrooms: </th>
+                    <td> {{ data.baths }} </td>
+                    <th>Rent: </th>
+                    <td> {{ '$' + data.rent }} </td>
+                </tr>
+                <tr>
+                    <th>Lease Term: </th>
+                    <td> {{ data.leaseTerm + ' months' }} </td>
+                    <th>Pet Friendly?: </th>
+                    <td> {{ data.pets }} </td>
+                </tr>
+            </thead> </div>
+    </table>
+    </div> -->
+     
+
+
+
+
+
+
+
+<!--         <div id="new" ui-view> </div> -->
